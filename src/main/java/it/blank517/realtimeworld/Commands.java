@@ -71,9 +71,9 @@ class Commands implements CommandExecutor {
                 config.save();
                 config.setEnabled(true);
                 task.startTask();
-                sender.sendMessage(messages.get(1)); // Time synchronization enabled
+                sender.sendMessage(messages.get(1)); // Time synchronisation enabled
             } else {
-                sender.sendMessage(messages.get(2)); // Time synchronization is already enabled
+                sender.sendMessage(messages.get(2)); // Time synchronisation is already enabled
             }
         } else {
             sender.sendMessage(messages.get(0, new String[]{alias}));
@@ -87,9 +87,9 @@ class Commands implements CommandExecutor {
                 config.save();
                 config.setEnabled(false);
                 task.stopTask();
-                sender.sendMessage(messages.get(3)); // Time synchronization disabled
+                sender.sendMessage(messages.get(3)); // Time synchronisation disabled
             } else {
-                sender.sendMessage(messages.get(4)); // Time synchronization is already disabled
+                sender.sendMessage(messages.get(4)); // Time synchronisation is already disabled
             }
         } else {
             sender.sendMessage(messages.get(0, new String[]{alias}));
